@@ -1,0 +1,272 @@
+git init REPO
+cd REPO
+echo "Hello test" >> test.txt
+echo "Hello merge" >> merge.txt
+git add test.txt merge.txt
+git log --oneline --decorate
+git branch testing
+git log --oneline --decorate
+git commit -m test.txt merge.txt
+git checkout testing
+echo  "Hello test file I am in testing branch" >> test.txt
+git checkout master
+git commit -a -m 'made a change'
+git log --oneline --decorate --graph --all
+cat test.txt
+git checkout -b iss53
+
+
+
+03-02-2021
+=================================================================
+git checkout
+ls
+cat merge.txt
+echo " i am adding content from iss53" >> merge.txt
+ cat merge.txt
+ git add merge.txt
+git commit -m"Commit"
+git checkout master
+git checkout -b hotfix
+ls
+cat merge.txt
+ echo " new content add" >> merge.txt
+ cat merge.txt
+git add merge.txt
+git commit -m "Comitted"
+git log --oneline --decorate --graph --all
+ git checkout master
+ git merge hotfix
+cat merge.txt
+ git branch -d hotfix
+git log --oneline --decorate --graph --all
+git checkout iss53
+ls
+cat merge.txt
+echo "hello iss53" >> merge.txt
+cat merge.txt
+git add merge.txt
+git commit -m "Commited iss53"
+git log --oneline --decorate --graph --all
+git checkout master
+git merge iss53
+git add merge.txt
+git commit -m "Commited"
+git log --oneline --decorate --graph --all
+git branch -d iss53
+
+==================================================================
+04-02-2021
+
+ git remote add MCA2020 https://github.com/Gptl9574/MCA2020.git
+ git push MCA2020
+
+
+=============================================================================================================
+17-02-2021
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop
+$ git clone https://github.com/Gptl9574/SMART-APP.git
+Cloning into 'SMART-APP'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop
+$ ls
+'A_Practical_Approach_to_Design_Implement(1).pdf'
+ Gaurang/
+ SMART-APP/
+'Saline level monitoring & alert system.docx'
+'Set rate formula.docx'
+'Steven F. Lott - Functional Python Programming_ Discover the power of functional programming, generator functions, lazy evaluation, the built-in itertools library, and monads-Packt Publishing.pdf'
+'Sublime Text 3.lnk'*
+'Visual Studio Code.lnk'*
+'XAMPP Control Panel.lnk'*
+ computer.lnk*
+ desktop.ini
+ formate.xlsx
+'git commands.txt'
+'lazy evaluation'/
+'mongo - Shortcut.lnk'*
+ practicals/
+ project/
+ structure.html
+ website/
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop
+$ cd SMART_APP
+bash: cd: SMART_APP: No such file or directory
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop
+$ cd SMART-App
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git commit -m
+error: switch `m' requires a value
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git log
+commit c32b4539621e5812a56c4690bcc8631ac9533587 (HEAD -> main, origin/main, origin/HEAD)
+Author: Gaurang Patel <77188630+Gptl9574@users.noreply.github.com>
+Date:   Wed Feb 17 10:27:52 2021 +0530
+
+    Initial commit
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ echo "revision of github" >> newfile.txt
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ ls
+README.md  newfile.txt
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git add newfile.txt
+warning: LF will be replaced by CRLF in newfile.txt.
+The file will have its original line endings in your working directory
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git commit -m newfile.txt "First commit"
+error: pathspec 'First commit' did not match any file(s) known to git
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git commit -m newfile.txt
+[main e56743b] newfile.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newfile.txt
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git log
+commit e56743b019692dea5d7d8e6173dc66139d02b991 (HEAD -> main)
+Author: Gaurang <patelgaurang11080@gmail.com>
+Date:   Wed Feb 17 10:40:06 2021 +0530
+
+    newfile.txt
+
+commit c32b4539621e5812a56c4690bcc8631ac9533587 (origin/main, origin/HEAD)
+Author: Gaurang Patel <77188630+Gptl9574@users.noreply.github.com>
+Date:   Wed Feb 17 10:27:52 2021 +0530
+
+    Initial commit
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git remote add SMART-APP https://github.com/Gptl9574/SMART-APP.git
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 150.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gptl9574/SMART-APP.git
+   c32b453..e56743b  main -> main
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git branch IOT
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ ls
+README.md  newfile.txt
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git log --oneline --decorate --graph --all
+* e56743b (HEAD -> main, origin/main, origin/HEAD, IOT) newfile.txt
+* c32b453 Initial commit
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git checkout IOT
+Switched to branch 'IOT'
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (IOT)
+$ ls
+README.md  newfile.txt
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (IOT)
+$ echo " IOT BRANCH content" >> newfile.txt
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (IOT)
+$ cd newfile.txt
+bash: cd: newfile.txt: Not a directory
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (IOT)
+$ cat newfile.txt
+revision of github
+ IOT BRANCH content
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (IOT)
+$ git add newfile.txt
+warning: LF will be replaced by CRLF in newfile.txt.
+The file will have its original line endings in your working directory
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (IOT)
+$ git commit -m "IOT BRANCH COMMIT"
+[IOT 7cd432d] IOT BRANCH COMMIT
+ 1 file changed, 1 insertion(+)
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (IOT)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git merge IOT main
+Updating e56743b..7cd432d
+Fast-forward
+ newfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 333 bytes | 83.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gptl9574/SMART-APP.git
+   e56743b..7cd432d  main -> main
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.29 KiB | 6.00 KiB/s, done.
+From https://github.com/Gptl9574/SMART-APP
+   7cd432d..8ac0652  main       -> origin/main
+ * [new branch]      ML         -> origin/ML
+Updating 7cd432d..8ac0652
+Fast-forward
+ newfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ ls
+README.md  newfile.txt
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ cat newfile.txt
+revision of github
+ IOT BRANCH content
+ ML Branch content
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git log --oneline --decorate --graph --all
+*   8ac0652 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #1 from Gptl9574/ML
+|\
+| * 581afd2 (origin/ML) newfile.txt
+|/
+* 7cd432d (IOT) IOT BRANCH COMMIT
+* e56743b newfile.txt
+* c32b453 Initial commit
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$ git branch -d IOT
+Deleted branch IOT (was 7cd432d).
+
+Gaurang Patel@DESKTOP-IMC9PAT MINGW64 ~/Desktop/SMART-App (main)
+$
